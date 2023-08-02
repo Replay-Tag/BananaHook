@@ -25,9 +25,9 @@ namespace BananaHook.Utils
         Cave = 3,
         Canyon = 4,
         Mountain = 5,
-        SkyJungle = 6,
+        Sky Jungle = 6,
         Basement = 7,
-        Beachcove = 8
+        Beach = 8
     };
     public class Room
     {
