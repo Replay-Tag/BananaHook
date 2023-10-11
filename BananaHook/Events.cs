@@ -33,7 +33,7 @@ namespace BananaHook
     public class Events
     {
         public static EventHandler<RoomJoinedArgs>          OnRoomJoined;
-        //public static EventHandler<RoomJoinedArgs>          OnRoomJoinedPost;
+        // public static EventHandler<RoomJoinedArgs>          OnRoomJoinedPost;
         public static EventHandler                          OnRoomDisconnected;
         public static EventHandler<PlayerDisConnectedArgs>  OnPlayerConnected;
         public static EventHandler<PlayerDisConnectedArgs>  OnPlayerDisconnectedPre;
