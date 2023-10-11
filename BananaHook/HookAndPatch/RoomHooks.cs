@@ -1,5 +1,6 @@
 ﻿using BananaHook.HookAndPatch;
 using BananaHook.Utils;
+using GorillaLocomotion;
 using HarmonyLib;
 using Photon.Pun;
 using System;
