@@ -33,6 +33,6 @@ namespace BananaHook
                 m_hMyInstance.UnpatchAll(m_szInstanceId);
             }
             m_bIsPatched = false;
-        }
+        }*/
     }
 }
