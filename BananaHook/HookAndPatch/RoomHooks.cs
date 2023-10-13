@@ -33,6 +33,9 @@ namespace BananaHook.Patches
                 else if (gm.Contains("canyon")) Room.m_eTriggeredMap = eJoinedMap.Canyon;
                 else if (gm.Contains("city")) Room.m_eTriggeredMap = eJoinedMap.GorillaShop;
                 else if (gm.Contains("mountain")) Room.m_eTriggeredMap = eJoinedMap.Mountain;
+                else if (gm.Contains("clouds")) Room.m_eTriggeredMap = eJoinedMap.SkyJungle;
+                else if (gm.Contains("basement")) Room.m_eTriggeredMap = eJoinedMap.Basement;
+                else if (gm.Contains("beach")) Room.m_eTriggeredMap = eJoinedMap.Beach;
                 else Room.m_eTriggeredMap = eJoinedMap.Unknown;
 
                 Room.m_bModdedLobby = gm.Contains("MODDED_");
@@ -44,6 +47,7 @@ namespace BananaHook.Patches
 
                 if (gm.Contains("DEFAULT")) Room.m_eCurrentLobbyMode = eRoomQueue.Default;
                 else if (gm.Contains("COMPETITIVE")) Room.m_eCurrentLobbyMode = eRoomQueue.Competitive;
+                else if (gm.Contains("MINIGAMES")) Room.m_eCurrentLobbyMode = eRoomQueue.MiniGames;
                 else Room.m_eCurrentLobbyMode = eRoomQueue.Custom;
             }
             else
