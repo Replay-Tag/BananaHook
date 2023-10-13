@@ -28,7 +28,7 @@ namespace BananaHook.Utils
             }
             return null;
         }
-        public static Player FindPlayerOfVRRig(VRRig vrrig) => (vrrig != null  && vrrig.creator != null) ? vrrig.creator : (Player)null;
+        public static Player FindPlayerOfVRRig(VRRig vrrig) => (vrrig != null && vrrig.photonView != null && vrrig.photonView.Owner != null) ? vrrig.photonView.Owner : (Player)null;
         public static Player GetTargetOf(Player p)
         {
             if (Room.m_eCurrentGamemode != eRoomGamemode.Hunt || p == null) return null;
