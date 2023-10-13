@@ -1,7 +1,7 @@
 ﻿using HarmonyLib;
 using System.Reflection;
 
-namespace BananaHook
+namespace BananaHook.HookAndPatch
 {
     public class Patch
     {
@@ -30,7 +30,8 @@ namespace BananaHook
         {
             if (m_hMyInstance != null)
             {
-                m_hMyInstance.UnpatchAll(m_szInstanceId);
+                //m_hMyInstance.UnpatchAll(m_szInstanceId);
+                m_hMyInstance.UnpatchSelf();
             }
             m_bIsPatched = false;
         }
